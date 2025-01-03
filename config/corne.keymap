@@ -30,10 +30,10 @@
 // |      |  Z    |     X     |      C     |      V      |   B      |   |   N     |      M      |     ,      |     .     |    /    |       |
 //                            |    &mo 3   |   &mo 1     | &mo 2    |   |  BSPC   |     SPC     |    ENT     |
                         bindings = <
-   &none   &kp Q   &kp W       &kp E        &kp R         &kp T          &kp Y     &kp U         &kp I        &kp O       &kp P     &mo 4
+   &none   &kp Q   &kp W       &kp E        &kp R         &kp T          &kp Y     &kp U         &kp I        &kp O       &kp P     &mo 1
    &none   &kp A   &hm LALT S  &hm LCTRL D  &hm LSHIFT F  &hm LGUI G     &kp H     &hm LSHIFT J  &hm LCTRL K  &hm LALT L  &kp SEMI  &kp SQT
    &none   &kp Z   &kp X       &kp C        &kp V         &kp B          &kp N     &kp M         &kp COMMA    &kp DOT     &kp FSLH  &none
-                               &mo 3        &mo 1         &mo 2          &kp BSPC  &kp SPACE     &kp RET
+                               &mo 1        &mo 1         &mo 1          &kp BSPC  &kp SPACE     &kp RET
                         >;
                 };
 
@@ -51,46 +51,5 @@
                         >;
                 };
 
-                number_layer {
-// -----------------------------------------------------------------------------------------
-// |      |  F1   |   F2  |   F3   |   F4   |   F5   |   |  F6     |  F7      |  F8      |  F9     |  F10     | BSPC |
-// |      |  1    |   2   |   3    |   4    |   5    |   |  6      |  7       |  8       |  9      |  0       |      |
-// |      |       |       |        |        |        |   |  +      |  -       |  *       |  /      |          |      |
-//                        |        |        |        |   |         |          |          |
-                        bindings = <
-    &none  &kp F1  &kp F2  &kp F3   &kp F4   &kp F5       &kp F6    &kp F7     &kp F8     &kp F9    &kp F10    &none
-    &none  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5       &kp N6    &kp N7     &kp N8     &kp N9    &kp N0     &none
-    &none  &none   &kp N9  &kp F10  &kp F11  &kp F12      &kp PLUS  &kp MINUS  &kp ASTRK  &kp FSLH  &kp EQUAL  &none
-                           &none    &none    &none        &none     &none      &none
-                        >;
-                };
-
-                dop_layer {
-// -----------------------------------------------------------------------------------------
-// |        |      |      |      |      |      |   |      |      |      |      |      |      |
-// |        |      |      |      |      |      |   |      |      |      |      |      |      |
-// |        |      |      |      |      |      |   |      |      |      |      |      |      |
-//                        |      |      |      |   |      |      |      |
-                        bindings = <
-    &none    &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none
-    &none    &none  &none  &none  &none  &none      &none  &kp j  &none  &none  &none  &none
-    &none    &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none
-                           &none  &none  &none      &none  &none  &none
-                        >;
-                };
-
-                sys_layer {
-// -----------------------------------------------------------------------------------------
-// |          |              |            |             |             |              |   |      |      |      |      |      |      |
-// |   BTCLR  |   BT1        |   BT2      |   BT3       |   BT4       |   BT5        |   |      |      |      |      |      |      |
-// |          |              |            |             |             |              |   |      |      |      |      |      |      |
-//                                        |             |             |              |   |      |      |      |
-                        bindings = <
-   &none       &none         &none         &none         &none         &none              &none  &none  &none  &none  &none  &none
-   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4       &none  &none  &none  &none  &none  &none
-   &none       &none         &none         &none         &none         &none              &none  &none  &none  &none  &none  &none
-                                           &none         &none         &none              &none  &none  &none
-                        >;
-                };
         };
 };
