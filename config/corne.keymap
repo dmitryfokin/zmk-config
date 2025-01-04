@@ -39,14 +39,14 @@
 
                 main_layer {
 // -----------------------------------------------------------------------------------------
-// |       |           |           |             | &kp LC(S)  | &kp LC(SPACE)  |      |          |         |         |          |       |      |
-// |       |           | ALT       | CTRL        | SHFT       | TAB            |      | LFT      |  DWN    |  UP     | RGT      |       |      |
-// |       | LC(Z)     | LC(X)     | LC(C)       | LC(V)      | ESC            |      |  [       |   P     |  ]      |          |       |      |
-//                                 |             |            |                |      | DEL      |         |         |
+// |       |           |           |             | &kp LC(S)  | &kp LC(SPACE)  |      |          |  HOME   |  UP      | END      |       |      |
+// |       |           | ALT       | CTRL        | SHFT       | TAB            |      | INS      |  LFT    |  DWN     | RGT      |       |      |
+// |       | LC(Z)     | LC(X)     | LC(C)       | LC(V)      | ESC            |      |  [       |   P     |  ]       | BSHL     |       |      |
+//                                 |             |            |                |      | DEL      |         |          |
                         bindings = <
-    &none   &none       &none        &none        &kp LC(S)    &kp LC(SPACE)           &none      &none     &none     &none      &none   &none
-    &none   &none       &kp RALT     &kp LCTRL    &kp LSHFT    &kp TAB                 &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &none   &none
-    &none   &kp LC(Z)   &kp LC(X)    &kp LC(C)    &kp LC(V)    &kp ESC                 &kp LBKT   &kp P     &kp RBKT  &kp SQT    &none   &none
+    &none   &none       &none        &none        &kp LC(S)    &kp LC(SPACE)           &none      &kp HOME  &kp UP     &kp END    &none   &none
+    &none   &none       &kp RALT     &kp LCTRL    &kp LSHFT    &kp TAB                 &kp INS    &kp LEFT  &kp DOWN   &kp RIGHT  &none   &none
+    &none   &kp LC(Z)   &kp LC(X)    &kp LC(C)    &kp LC(V)    &kp ESC                 &kp LBKT   &kp P     &kp RBKT   &kp BSHL   &none   &none
                                      &none        &none        &none                   &kp DEL    &none     &none
                         >;
                 };
