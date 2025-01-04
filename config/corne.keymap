@@ -25,57 +25,57 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  Q    |     W     |      E     |      R      |   T      |   |   Y     |      U      |     I      |     O     |   P     | &mo 4 |
-// |      |  A    |     S     |      D     |      F      |   G      |   |   H     |      J      |     K      |     L     |   ;     |  '    |
-// |      |  Z    |     X     |      C     |      V      |   B      |   |   N     |      M      |     ,      |     .     |    /    |       |
-//                            |    &mo 3   |   &mo 1     | &mo 2    |   |  BSPC   |     SPC     |    ENT     |
+// |       | Q     | W          | E           | R            | T          |   | Y        | U            | I           | O          | P        | &mo 4 |
+// |       | A     | ALT/S      | CTRL/D      | SHIFT/F      | GUI/G      |   | H        | SHIFT/J      | CTRL/K      | ALT/L      | ;        |       |
+// |       | Z     | X          | C           | V            | B          |   | N        | M            | ,           | .          | /        |       |
+//                              | &mo 3       | &mo 1        | &mo 2      |   | BSPC     | SPC          | ENT         |
                         bindings = <
-   &none   &kp Q   &kp W       &kp E        &kp R         &kp T          &kp Y     &kp U         &kp I        &kp O       &kp P     &mo 4
-   &none   &kp A   &hm LALT S  &hm LCTRL D  &hm LSHIFT F  &hm LGUI G     &kp H     &hm LSHIFT J  &hm LCTRL K  &hm LALT L  &kp SEMI  &kp SQT
-   &none   &kp Z   &kp X       &kp C        &kp V         &kp B          &kp N     &kp M         &kp COMMA    &kp DOT     &kp FSLH  &none
-                               &mo 3        &mo 1         &mo 2          &kp BSPC  &kp SPACE     &kp RET
+    &none   &kp Q   &kp W        &kp E         &kp R          &kp T            &kp Y      &kp U          &kp I         &kp O        &kp P      &mo 4
+    &none   &kp A   &hm LALT S   &hm LCTRL D   &hm LSHIFT F   &hm LGUI G       &kp H      &hm LSHIFT J   &hm LCTRL K   &hm LALT L   &kp SEMI   &none
+    &none   &kp Z   &kp X        &kp C         &kp V          &kp B            &kp N      &kp M          &kp COMMA     &kp DOT      &kp FSLH   &none
+                                 &mo 3         &mo 1          &mo 2            &kp BSPC   &kp SPACE      &kp RET
                         >;
                 };
 
                 main_layer {
-// -----------------------------------------------------------------------------------------
-// |       |           |           |             | &kp LC(S)  | &kp LC(SPACE)  |      |          |  HOME   |  UP      | END      |       |      |
-// |       |           | ALT       | CTRL        | SHFT       | TAB            |      | INS      |  LFT    |  DWN     | RGT      |       |      |
-// |       | LC(Z)     | LC(X)     | LC(C)       | LC(V)      | ESC            |      |  [       |   P     |  ]       | BSHL     |       |      |
-//                                 |             |            |                |      | DEL      |         |          |
+// -----------------------------------------------------------------------------------------------------------------------------------------------
+// |       |           |           |           | LC(S)     | LC(SPACE)     |      |          | HOME     | UP       | END       |          |      |
+// |       | TAB       | ALT       | CTRL      | SHFT      | DEL           |      | INS      | LFT      | DWN      | RGT       |          |      |
+// |       | LC(Z)     | LC(X)     | LC(C)     | LC(V)     | ESC           |      | [        | P        | ]        | SQT       | BSHL     |      |
+//                                 |           |           |               |      | DEL      |          |          |
                         bindings = <
-    &none   &none       &none        &none        &kp LC(S)    &kp LC(SPACE)           &none      &kp HOME  &kp UP     &kp END    &none   &none
-    &none   &none       &kp RALT     &kp LCTRL    &kp LSHFT    &kp TAB                 &kp INS    &kp LEFT  &kp DOWN   &kp RIGHT  &none   &none
-    &none   &kp LC(Z)   &kp LC(X)    &kp LC(C)    &kp LC(V)    &kp ESC                 &kp LBKT   &kp P     &kp RBKT   &kp BSLH   &none   &none
-                                     &none        &none        &none                   &kp DEL    &none     &none
+    &none   &none       &none       &none       &kp LC(S)   &kp LC(SPACE)          &none      &kp HOME   &kp UP     &kp END     &none      &none
+    &none   &kp TAB     &kp RALT    &kp LCTRL   &kp LSHFT   &kp DEL                &kp INS    &kp LEFT   &kp DOWN   &kp RIGHT   &none      &none
+    &none   &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &kp ESC                &kp LBKT   &kp P      &kp RBKT   &kp SQT     &kp BSLH   &none
+                                    &none       &none       &none                  &kp DEL    &none      &none
                         >;
                 };
 
                 number_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  F1   | F2         | F3          |   F4           |   F5   |   |  F6     |  F7           |  F8           |  F9          |  F10     | BSPC |
-// |      |  1    | &hm ALT 2  | &hm CTRL 3  |   &hm SHIFT 4  |   5    |   |  6      |  &hm SHIFT 7  |  &hm LCTRL 8  |  &hm LALT 9  |  0       |      |
-// |      |       |            |             |                |        |   |  +      |  -            |  *            |  /           |          |      |
-//                             |             |                |        |   |         |               |               |
+// |       | F1     | F2          | F3           | F4             | F5     |   | F6       | F7            | F8           | F9          | F10       |      |
+// |       | 1      | ALT/2       | CTRL/3       | SHIFT/4        | 5      |   | 6        | SHIFT/7       | LCTRL/8      | LALT/9      | 0         |      |
+// |       |        | F9          | F10          | F11            | F12    |   | +        | -             | *            | /           | =         |      |
+//                                |              |                |        |   |          |               |              |
                         bindings = <
-    &none  &kp F1  &kp F2       &kp F3        &kp F4           &kp F5       &kp F6    &kp F7          &kp F8          &kp F9         &kp F10    &none
-    &none  &kp N1  &hm LALT N2  &hm LCTRL N3  &hm LSHIFT N4    &kp N5       &kp N6    &hm LSHIFT N7   &hm LCTRL N8    &hm LALT N9    &kp N0     &none
-    &none  &none   &kp N9       &kp F10       &kp F11          &kp F12      &kp PLUS  &kp MINUS       &kp ASTRK       &kp FSLH       &kp EQUAL  &none
-                                &none         &none            &none        &none     &none           &none
+    &none   &kp F1   &kp F2        &kp F3         &kp F4           &kp F5       &kp F6     &kp F7          &kp F8         &kp F9        &kp F10     &none
+    &none   &kp N1   &hm LALT N2   &hm LCTRL N3   &hm LSHIFT N4    &kp N5       &kp N6     &hm LSHIFT N7   &hm LCTRL N8   &hm LALT N9   &kp N0      &none
+    &none   &none    &kp F9        &kp F10        &kp F11          &kp F12      &kp PLUS   &kp MINUS       &kp ASTRK      &kp FSLH      &kp EQUAL   &none
+                                   &none          &none            &none        &none      &none           &none
                         >;
                 };
 
                 dop_layer {
 // -----------------------------------------------------------------------------------------
-// |        |      |      |      |      |      |   |      |      |      |      |      |      |
-// |        |      |      |      |      |      |   |      |      |      |      |      |      |
-// |        |      |      |      |      |      |   |      |      |      |      |      |      |
-//                        |      |      |      |   |      |      |      |
+// |        |      |      |      |      |      |   |      | (        | )        |      |      |      |
+// |        |      |      |      |      |      |   |      |          |          |      |      |      |
+// |        |      |      |      |      |      |   |      |          |          |      |      |      |
+//                        |      |      |      |   |      |          |          |
                         bindings = <
-    &none    &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none
-    &none    &none  &none  &none  &none  &none      &none  &kp J  &none  &none  &none  &none
-    &none    &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none
-                           &none  &none  &none      &none  &none  &none
+    &none    &none  &none  &none  &none  &none      &none  &kp LPAR   &kp RPAR   &none  &none  &none
+    &none    &none  &none  &none  &none  &none      &none  &none      &none      &none  &none  &none
+    &none    &none  &none  &none  &none  &none      &none  &none      &none      &none  &none  &none
+                           &none  &none  &none      &none  &none      &none
                         >;
                 };
 
