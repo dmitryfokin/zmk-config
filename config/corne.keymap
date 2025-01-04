@@ -46,7 +46,7 @@
                         bindings = <
     &none   &none       &none        &none        &kp LC(S)    &kp LC(SPACE)           &none      &kp HOME  &kp UP     &kp END    &none   &none
     &none   &none       &kp RALT     &kp LCTRL    &kp LSHFT    &kp TAB                 &kp INS    &kp LEFT  &kp DOWN   &kp RIGHT  &none   &none
-    &none   &kp LC(Z)   &kp LC(X)    &kp LC(C)    &kp LC(V)    &kp ESC                 &kp LBKT   &kp P     &kp RBKT   &kp BSHL   &none   &none
+    &none   &kp LC(Z)   &kp LC(X)    &kp LC(C)    &kp LC(V)    &kp ESC                 &kp LBKT   &kp P     &kp RBKT   &kp BSLH   &none   &none
                                      &none        &none        &none                   &kp DEL    &none     &none
                         >;
                 };
