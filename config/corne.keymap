@@ -24,9 +24,6 @@
                 bindings = <&kp>, <&kp>;
                 };
         };
-        &lt {
-                tapping-term-ms = <300>;
-                };
         macros {
                 onec_lt: onec_lt {
                         compatible = "zmk,behavior-macro";
