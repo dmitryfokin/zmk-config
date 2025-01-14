@@ -140,12 +140,12 @@
 // |       | Q         | W          | E           | R            | T           |   | Y        | U            | I           | O          | P        | &mo 4 |
 // |       | &lt 3 A   | ALT/S      | CTRL/D      | SHIFT/F      | GUI/G       |   | H        | SHIFT/J      | CTRL/K      | ALT/L      | ;        |       |
 // |       | Z         | X          | C           | &lt 3 V      | B           |   | N        | M            | ,           | .          | /        |       |
-//                                  | &mo 3       | &lt 1 ENT    | &lt 2 ESC   |   | BSPC     | SPC          | ENT         |
+//                                  | &mo 3       | &mo 1        | &mo 2       |   | BSPC     | SPC          | ENT         |
                         bindings = <
     &none   &kp Q     &kp W          &kp E         &kp R          &kp T             &kp Y      &kp U          &kp I         &kp O        &kp P      &mo 4
     &none   &lt 3 A   &hm LALT S     &hm LCTRL D   &hm LSHIFT F   &hm LGUI G        &kp H      &hm LSHIFT J   &hm LCTRL K   &hm LALT L   &kp SEMI   &none
     &none   &kp Z     &kp X          &kp C         &lt 3 V        &kp B             &kp N      &kp M          &kp COMMA     &kp DOT      &kp FSLH   &none
-                                     &mo 3         &lt 1 RET      &lt 2 ESC         &kp BSPC   &kp SPACE      &kp RET
+                                     &mo 3         &mo 1          &mo 2             &kp BSPC   &kp SPACE      &kp RET
                         >;
                 };
 
@@ -179,15 +179,15 @@
 
                 dop_layer {
 // -----------------------------------------------------------------------------------------
-// |        |      |      |      |      |      |   |            | (          | )          |            |            |      |
-// |        |      |      |      |      |      |   | &          | ;          | "          | [          | ]          |      |
-// |        |      |      |      |      |      |   | =          | <          | >          | {          | }          |      |
-//                        |      |      |      |   |            |            |            |
+// |        |      |      |      |         |         |   |            | (          | )          |            |            |      |
+// |        |      |      |      | DEL     |         |   | &          | ;          | "          | [          | ]          |      |
+// |        |      |      |      |         |         |   | =          | <          | >          | {          | }          |      |
+//                        |      | ENT     | ESC     |   |            |            |            |
                         bindings = <
-    &none    &none  &none  &none  &none  &none      &none        &kp LPAR     &kp RPAR     &none        &none        &none
-    &none    &none  &none  &none  &none  &none      &onec_amps   &kp LS(N4)   &kp LS(N2)   &onec_lbkt   &onec_rbkt   &none
-    &none    &none  &none  &none  &none  &none      &kp EQUAL    &onec_lt     &onec_gt     &onec_lbrc   &onec_rbrc   &none
-                           &none  &none  &none      &none        &none        &none
+    &none    &none  &none  &none  &none     &none         &none        &kp LPAR     &kp RPAR     &none        &none        &none
+    &none    &none  &none  &none  &kp DEL   &none         &onec_amps   &kp LS(N4)   &kp LS(N2)   &onec_lbkt   &onec_rbkt   &none
+    &none    &none  &none  &none  &none     &none         &kp EQUAL    &onec_lt     &onec_gt     &onec_lbrc   &onec_rbrc   &none
+                           &none  &kp RET   &kp ESC       &none        &none        &none
                         >;
                 };
 
